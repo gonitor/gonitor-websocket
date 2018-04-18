@@ -44,8 +44,10 @@
   revision = "2402d76f3d41f928c7902a765dfc872356dd3aad"
 
 [[projects]]
+  branch = "master"
   name = "github.com/gonitor/gonitor"
   packages = [
+    "config",
     "rest/cpu",
     "rest/disk",
     "rest/gpu",
@@ -73,8 +75,13 @@
     "stream/runtime",
     "util"
   ]
-  revision = "431bc5c51f3bb45c2c6e7c0f9e2d30831456610d"
-  version = "0.1.0"
+  revision = "bad4ef5152abf1701ce2634e8ebdbd2578de0ee2"
+
+[[projects]]
+  name = "github.com/gorilla/websocket"
+  packages = ["."]
+  revision = "ea4d1f681babbce9545c9c5f3d5194a789c89f5b"
+  version = "v1.2.0"
 
 [[projects]]
   branch = "master"
@@ -118,7 +125,7 @@
     "html/atom",
     "html/charset"
   ]
-  revision = "8d16fa6dc9a85c1cd3ed24ad08ff21cf94f10888"
+  revision = "84348c2dc81a524fe94aaea3e3d9f967135338ef"
 
 [[projects]]
   branch = "master"
@@ -168,6 +175,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "36fadcbe10324fa0a7c5bba5beb49a5b8327d6e248977a9743ab924e2a03441e"
+  inputs-digest = "a528999dd408846d7fc9481f0d17934093e64f4ffa7acf868afb6ba3018b3da6"
   solver-name = "gps-cdcl"
   solver-version = 1

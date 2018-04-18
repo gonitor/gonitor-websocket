@@ -8,7 +8,8 @@ Gonitor is fast server monitor service that make monitoring servers easy and sim
 
 ## Features
 - Provides server CPU, Memory, GPU, Disk, Load, Network, Host and Runtime information
-- Supports real-time monitoring with WebSocket
+- Supports REST API and Swagger UI
+- Supports real-time monitoring with Stream or WebSocket
 - Supports mutiple-platform build (darwin, windows and linux)
 - Supports Docker build and Travis CI
 
@@ -41,7 +42,7 @@ go test ./...
 Or run all tests with coverage
 
 ```
-sh coverage.sh
+bash coverage.sh
 ```
 
 ## Build and Run
@@ -50,22 +51,45 @@ Run main.go
 ``` bash
 go run main.go
 # serve at localhost:9000
-# serve WebSocket API at localhost:9000/websocket
+# serve WebSocket API at localhost:9000/websocket/v1
 ```
 
 Build and run native binary
 
 ```
-sh Build.sh
+bash Build.sh
 
 ./gonitor-websocket
 ```
 Build native binary for multiple platforms (darwin, windows and linux)
 
 ```
-sh BuildMulti.sh
+bash BuildMulti.sh
 ```
+## Environment variables
 
+```bash
+    # enable production mode, default is false
+    env GONI_PRODMODE=true
+    
+    # disable REST API, default is true
+    env GONI_REST=false
+
+    # disable Stream API, default is true
+    env GONI_STREAM=false
+
+    # combine three environment variables
+    env GONI_PRODMODE=true GONI_REST=false GONI_STREAM=false
+
+    # enable compression, default is true
+    env GONI_COMPRESS=false
+
+    # set read buffer size, default equals to 1024
+    env GONI_RBSIZE=false
+
+    # set write buffer size, default equals to 1024
+    env GONI_WBSIZE=false
+```
 ## Docker support 
 
 Build docker image

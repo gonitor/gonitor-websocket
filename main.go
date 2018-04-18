@@ -5,7 +5,9 @@ import (
 
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
-	"github.com/gonitor/gonitor-websocket/route"
+	"github.com/gonitor/gonitor-websocket/config"
+	"github.com/gonitor/gonitor-websocket/env"
+	gonitorConfig "github.com/gonitor/gonitor/config"
 )
 
 //CORSMiddleware ...
@@ -28,11 +30,14 @@ func CORSMiddleware() gin.HandlerFunc {
 }
 
 func main() {
+	gonitorConfig.LoadEnvVariables()
+	env.LoadEnvVariables()
+
 	router := gin.Default()
 
 	router.Use(CORSMiddleware())
 
-	route.SetRoutes(router)
+	config.SetRoutes(router)
 
 	router.Use(static.Serve("/", static.LocalFile("./view", true)))
 

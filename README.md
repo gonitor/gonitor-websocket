@@ -85,10 +85,10 @@ bash BuildMulti.sh
     env GONI_COMPRESS=false
 
     # set read buffer size, default equals to 1024
-    env GONI_RBSIZE=false
+    env GONI_RBSIZE=2048
 
     # set write buffer size, default equals to 1024
-    env GONI_WBSIZE=false
+    env GONI_WBSIZE=2048
 ```
 ## Docker support 
 

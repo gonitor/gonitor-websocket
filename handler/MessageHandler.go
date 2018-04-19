@@ -1,8 +1,6 @@
 package handler
 
 import (
-	"time"
-
 	"github.com/gin-gonic/gin"
 	"github.com/gonitor/gonitor-websocket/env"
 	"github.com/gonitor/gonitor-websocket/service/cpu"
@@ -28,7 +26,7 @@ func HanldeWebSocket(context *gin.Context) {
 		if err != nil {
 			break
 		}
-		HandleMessage(conn, messageType, message)
+		go HandleMessage(conn, messageType, message)
 	}
 }
 
@@ -96,15 +94,5 @@ func HandleMessage(conn *websocket.Conn, messageType int, message []byte) {
 	case "RuntimeGetGoOS":
 		response = runtime.ServiceGetGoOS()
 	}
-	go func() {
-		count := 0
-		for {
-			count++
-			time.Sleep(1 * time.Second)
-			conn.WriteMessage(messageType, response)
-			if count >= 6 {
-				break
-			}
-		}
-	}()
+	conn.WriteMessage(messageType, response)
 }

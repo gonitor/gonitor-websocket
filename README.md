@@ -1,4 +1,4 @@
-# Fast Server Monitor with WebSocket in Go
+# Gonitor with WebSocket in Go
 [![Build Status](https://travis-ci.org/gonitor/gonitor-websocket.svg?branch=master)](https://travis-ci.org/gonitor/gonitor-websocket)
 [![codecov](https://codecov.io/gh/gonitor/gonitor-websocket/branch/master/graph/badge.svg)](https://codecov.io/gh/gonitor/gonitor-websocket)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gonitor/gonitor-websocket)](https://goreportcard.com/report/github.com/gonitor/gonitor-websocket)

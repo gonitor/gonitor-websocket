@@ -15,6 +15,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/bmizerany/assert"
+  packages = ["."]
+  revision = "b7ed37b82869576c289d7d97fb2bbd8b64a0cb28"
+
+[[projects]]
+  branch = "master"
   name = "github.com/gin-contrib/static"
   packages = ["."]
   revision = "73da7037e716e63aa2b0ffceb630dfa7be299086"
@@ -85,6 +91,18 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/kr/pretty"
+  packages = ["."]
+  revision = "cfb55aafdaf3ec08f0db22699ab822c50091b1c4"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/kr/text"
+  packages = ["."]
+  revision = "7cafcd837844e784b526369c9bce262804aebc60"
+
+[[projects]]
+  branch = "master"
   name = "github.com/manucorporat/sse"
   packages = ["."]
   revision = "ee05b128a739a0fb76c7ebd3ae4810c1de808d6d"
@@ -109,12 +127,6 @@
   ]
   revision = "fc04d2dd9a512906a2604242b35275179e250eda"
   version = "v2.18.03"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/shirou/w32"
-  packages = ["."]
-  revision = "bb4de0191aa41b5507caa14b0650cdbddcd9280b"
 
 [[projects]]
   branch = "master"
@@ -175,6 +187,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a528999dd408846d7fc9481f0d17934093e64f4ffa7acf868afb6ba3018b3da6"
+  inputs-digest = "3fbb3b693c2ab02bd2add9d197d6e6d4ac9f6e43d096a9c0c9d97ea2d3a1140c"
   solver-name = "gps-cdcl"
   solver-version = 1

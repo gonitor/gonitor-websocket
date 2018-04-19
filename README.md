@@ -59,7 +59,7 @@ Build and run native binary
 ```
 bash Build.sh
 
-./gonitor-websocket
+./gonitorWebsocket
 ```
 Build native binary for multiple platforms (darwin, windows and linux)
 

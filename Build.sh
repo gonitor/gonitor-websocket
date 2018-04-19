@@ -1,1 +1,1 @@
-go build -o gonitor.out .
+go build -o gonitorWebsocket.out .

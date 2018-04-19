@@ -1,2 +1,2 @@
-docker build -t gonitor/gonitor .
-docker tag  gonitor/gonitor gonitor/gonitor:0.1.0
+docker build -t gonitor/gonitor-websocket .
+docker tag  gonitor/gonitor-websocket gonitor/gonitor-websocket:0.1.0

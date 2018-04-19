@@ -1,6 +1,6 @@
 
 package_name=build
-app_name=gonitor
+app_name=gonitorWebSocket
 
 platforms=("windows/amd64" "linux/amd64" "darwin/amd64")
 

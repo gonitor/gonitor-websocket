@@ -3,6 +3,8 @@
 [![codecov](https://codecov.io/gh/gonitor/gonitor-websocket/branch/master/graph/badge.svg)](https://codecov.io/gh/gonitor/gonitor-websocket)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gonitor/gonitor-websocket)](https://goreportcard.com/report/github.com/gonitor/gonitor-websocket)
 [![GoDoc](https://godoc.org/github.com/gonitor/gonitor-websocket?status.svg)](https://godoc.org/github.com/gonitor/gonitor-websocket)
+[![](https://images.microbadger.com/badges/image/gonitor/gonitor-websocket.svg)](https://microbadger.com/images/gonitor/gonitor-websocket)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gonitor/gonitor-websocket/blob/master/LICENSE)
 
 Gonitor is fast server monitor service that make monitoring servers easy and simple. Gonitor provides many cool features for monitoring server CPU, Memory, GPU, Disk, Load, Network, etc. If you like or use Gonitor, please star or share it ! 
 
@@ -95,7 +97,7 @@ bash BuildMulti.sh
 Build docker image
 
 ```
-docker build -t gonitor/gonitor-websocket .
+bash Dockerbuild.sh
 ```
 
 Run docker container
